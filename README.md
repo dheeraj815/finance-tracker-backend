@@ -1,16 +1,15 @@
 # Finance Tracker API
 
-A clean and production-style REST API for managing personal financial transactions using FastAPI, SQLAlchemy, and SQLite.
+A simple and production-style REST API for managing personal financial transactions using FastAPI.
 
 ---
 
 ## Features
 
-* Create, read, update, and delete transactions
+* CRUD operations for transactions
 * Track income and expenses
-* Filter by category and date
-* Basic financial analytics (income, expenses, balance)
-* Clean modular backend structure
+* Basic analytics (income, expenses, balance)
+* Clean backend structure
 
 ---
 
@@ -18,7 +17,6 @@ A clean and production-style REST API for managing personal financial transactio
 
 * FastAPI
 * SQLAlchemy
-* Pydantic
 * SQLite
 * Uvicorn
 
@@ -35,7 +33,11 @@ finance_tracker/
 │   ├── schemas.py
 │   ├── crud.py
 │   ├── routes/
+│   │   ├── users.py
+│   │   ├── transactions.py
+│   │   └── analytics.py
 │   └── services/
+│       └── analytics_service.py
 ├── requirements.txt
 ├── README.md
 ```
@@ -56,7 +58,7 @@ pip install -r requirements.txt
 
 ---
 
-## Run Server
+## Run
 
 ```bash
 uvicorn app.main:app --reload
@@ -66,23 +68,7 @@ uvicorn app.main:app --reload
 
 ## API Docs
 
-Open in browser:
-
 http://127.0.0.1:8000/docs
-
----
-
-## Example Request
-
-```json
-{
-  "amount": 5000,
-  "type": "income",
-  "category": "salary",
-  "description": "monthly salary",
-  "user_id": 1
-}
-```
 
 ---
 
