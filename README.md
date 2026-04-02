@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💸 Finance Tracker API
 
 A **production-style REST API** for managing personal financial transactions — built with FastAPI, SQLAlchemy, and SQLite. Designed to demonstrate clean architecture, separation of concerns, and scalable backend engineering principles.
@@ -407,3 +408,7 @@ The most common query pattern is `WHERE user_id = ? AND type = ?` or `WHERE user
 | Auth | None | JWT middleware in `core/` |
 | Config | `.env` file | AWS SSM / Vault |
 | Deployment | `uvicorn` | Gunicorn + uvicorn workers behind Nginx |
+=======
+# finance-tracker-backend
+Finance Tracker Backend using FastAPI with analytics
+>>>>>>> 78113ea0a684e95cb1f1ce551aba3adfc9ddd141
